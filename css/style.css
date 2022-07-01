@@ -1,3 +1,4 @@
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -348,12 +349,12 @@
     display: none;
   }
   body{
-    background-color: #b3e8ff;
+    background-color: #EBF1FF	;
   }
   .header {
     position: absolute;
     width: 100%;
-    top: 0;
+    top: 10%;
     left: 0;
     z-index: 50;
     opacity: 0.8;
@@ -377,7 +378,7 @@
     padding-right: 20px;
   }
   .header__logo {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 18px;
     position: relative;
     line-height: 204.1666666667%;
@@ -386,8 +387,6 @@
   }
   
   .header__menu {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
             flex: 0 1 auto;
     margin: 0px 0px 0px 80px;
   }
@@ -396,7 +395,6 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   
@@ -404,13 +402,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
     margin: 0px 40px;
     padding: 5px 0px;
@@ -423,8 +416,6 @@
     font-weight: 500;
     font-size: 20px;
     color: inherit;
-    -webkit-transition: color 0.3s ease 0s;
-    -o-transition: color 0.3s ease 0s;
     transition: color 0.3s ease 0s;
     color: black;
     text-decoration: none;
@@ -453,8 +444,71 @@
         flex-wrap: wrap;
     margin: 0px 20px;
     padding: 5px 0px;
-    position: relative;
+    position: relative;}
+    .menu__link .short{
+     position: absolute;
+      padding-left: 20px;
+      padding-top: 20px;
+      color:white;
+    }
+
+    .menu__link .short1 {
+      position: absolute;
+       visibility: hidden;
+       padding-left: 20px;
+       padding-top: 20px;
+       color:blue;
+     }
+     .menu__link:hover .short1{
+       visibility: visible;
+       
+     }
+    .menu__link .long{
+      position: absolute;
+       visibility: hidden;
+       padding-left: 30px;
+       padding-top: 20px;
+       color:blue;
+     }
+     .menu__link:hover .long{
+       visibility: visible;
+       color:blue;
+       
+     }
+     .register__link .long{
+      position: absolute;
+       visibility: hidden;
+       padding-left: 25px;
+       padding-top: 20px;
+     }
+     .register__link:hover .long{
+       visibility: visible;
+       
+     }
+  /* 
+  .register__link:after {
+    content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px; 
+      background-color: black; 
+      transition: width 0.5s; 
   }
+  
+  .register__link:hover:after {
+    content: ".";
+      width: 100%;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 3px; 
+      background-color: blue; 
+      transition: width 0.5s; 
+  } */
   .register__link:hover {
     color: blue;
   }
@@ -470,7 +524,7 @@
   .imges-bell{
     height: 25px;
     padding-left: 50px;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-right: 20px;
   }
   .Image-box{
@@ -480,6 +534,7 @@
   position: absolute;
   right: 0;
   z-index: 10;
+  padding-top: 50px;
 }
 .Alips{
   position: absolute;
@@ -492,15 +547,144 @@
   padding-top: 400px;
 }
 .register__register {
-  background-color: blue;
   line-height: 171.4285714286%;
-  font-weight: 500;
-  font-size: 20px;
-  color: inherit;
-  transition: color 0.3s ease 0s;
+  align-items: center;
+  background-color: #1A5BF0;
+  border-radius: 99em;
   color: white;
+  display: flex;
+  font-weight: 500;
+  height: 2.5em;
+  min-width: 2.5em;
+  padding: 0 1em;
+  position: relative; 
+  transition: 0.2s ease;
+  width: 100%;
   text-decoration: none;
+  font-size: 18px;
 }
 .register__register:hover {
   color: black;
 }
+.test{
+  position: relative;
+}
+
+.Information{
+  position: absolute;
+  width: 34%;
+    top: 25%;
+    left: 0;
+    z-index: 50;
+    opacity: 0.8;
+    padding-left: 50px;
+}
+.Booking{
+  color:blue;
+  font-weight: 700;
+}
+.Big{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 58px;
+  color:blue;
+  font-weight: bold;
+}
+.text{
+  color:blue;
+  font-size: 14px;
+  font-weight: 300;
+  width: 70%;
+}
+.search-button{
+  position: relative;
+  color:white;
+  border-bottom-left-radius: 20% 95%;
+  border-bottom-right-radius: 20% 95%;
+  border-top-left-radius: 20% 95%;
+  border-top-right-radius: 20% 95%;
+  background-color: #1A5BF0;
+  border:0;
+  width: 140px;
+  height: 40px;
+  right: 170px;
+}
+
+#email{
+  position: relative;
+  /* border-radius: 35%; */
+  width: 350px;
+  height: 40px;
+  border: 1px solid #000;
+  padding: 5px 5px 5px 70px;
+  border-bottom-left-radius: 20% 95%;
+  border-bottom-right-radius: 20% 95%;
+  border-top-left-radius: 20% 95%;
+  border-top-right-radius: 20% 95%;
+  background: url(/img/convert.png) no-repeat 12px 1px;
+  background-size: auto 90%;
+background-color: white;
+}
+
+  .numbers{
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    z-index: 50;
+    opacity: 0.8;
+  }
+  .Numbers__menu {
+    flex: 0 1 auto;
+    margin: 0px 0px 0px 80px;
+  }
+  
+  .numbers__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        justify-content: space-between;
+
+  }
+  
+  .numbers__item {
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: relative;
+    text-decoration: none;
+  }
+  .Numbers__container
+  {
+    max-width: 670px;
+    padding: 0px 15px;
+    
+  }
+  .numbers__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    min-height: 90px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px 0px;
+  }
+  .Bigger{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    justify-content: space-between;
+    padding-left: 10px;
+  }
+  .Bigger-blue{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 38px;
+    justify-content: space-between;
+    padding-left: 20px;
+    color: blue;
+  }
