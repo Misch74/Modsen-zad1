@@ -353,7 +353,7 @@
   }
   .header {
     position: absolute;
-    width: 100%;
+    width: 90%;
     top: 10%;
     left: 0;
     z-index: 50;
@@ -433,7 +433,7 @@
   .register{
     display:flex;
     margin:0px 20px;
-    padding-left: 200px;
+    padding-left: 0px;
   }
   .register__item {
     display: -webkit-box;
@@ -443,8 +443,9 @@
             justify-content: space-between;
         flex-wrap: wrap;
     margin: 0px 20px;
-    padding: 5px 0px;
-    position: relative;}
+    padding: 5px 0px 0px 50px;
+    position: relative;
+  }
     .menu__link .short{
      position: absolute;
       padding-left: 20px;
@@ -656,6 +657,26 @@ background-color: white;
     position: relative;
     text-decoration: none;
   }
+  .numbers__item-2 {
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: relative;
+    text-decoration: none;
+  }
+  .numbers__item-3 {
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    position: relative;
+    text-decoration: none;
+  }
   .Numbers__container
   {
     max-width: 670px;
@@ -688,3 +709,192 @@ background-color: white;
     padding-left: 20px;
     color: blue;
   }
+  .imges-burg{
+    visibility: hidden;
+  }
+
+  @media (max-width:1820px) {
+    .header{width: 100%;}
+  }
+  @media (max-width:1680px) {
+    .search-button{position: absolute;
+    right: 160px;
+    top:385px}
+  }
+
+  @media (max-width:1660px) {
+    .register{display: none;}
+    .Information{width: 30%;}
+    .search-button{position: absolute;
+      right: 90px;
+      top:385px}
+  }
+  @media (max-width:1610px) {
+    .search-button{position: absolute;
+      right: 60px;
+      top:385px}
+  }
+  @media (max-width:1500px) {
+    .search-button{position: absolute;
+      right: 35px;
+      top:385px}
+    }
+  @media (max-width:1460px) {
+    .numbers__item-3{display: none;}
+    .search-button{position: absolute;
+      right: 15px;
+      top:401px}
+  }
+  @media (max-width:1410px)
+  {
+    .register__item{padding-left: 10px;}
+  }
+  @media (max-width:1360px) {
+    .numbers__item-2{display: none;}
+    .numbers__item{display: none;}
+    .imges-burg{visibility: visible; position: absolute; right: 0px; top:13px}
+    .Information{position: absolute;
+    top:1150px;left:100px;width: 80%;}
+    .search-button{position: relative;
+      right: 155px;top:0;}
+    .header{top:0%}
+    .imges{padding-left: 10px;}
+    .Numbers__container{position: relative;top:850px;}
+    .Hero{align-items: center;}
+  }
+  @media (max-width:830px) 
+  {
+    .Hero{display:block; width:100%; object-fit: cover; object-position: top;}
+    .Alips{display:block; width:90%; object-fit: cover; object-position: top;}
+    .Shtany{display:block; width:90%; object-fit: cover; object-position: top;}
+    .Information{width:95%; padding-left: 0px; left: 30px; top: 1100px}
+  }
+  @media (max-width:740px) 
+  {
+    .Information{width:95%; padding-left: 0px; left: 30px}
+  }
+  @media (max-width:620px) 
+  {
+    .Information{top:1000px;width: 100%;}
+    
+  }
+  @media (max-width:595px)
+  {
+    .search-button{position: absolute; right: 165px; top:385px}
+    .Shtany{ width:70%; }
+    .Information{top:800px;}
+  }
+  @media (max-width:555px)
+  {
+    .search-button{ right: 125px;}
+  }
+  @media (max-width:500px)
+  {
+    .search-button{ right: 95px;}
+  }
+  
+  @media (max-width:1360px){
+  #nav {
+    opacity: 0.8;
+    background-color: white;
+    width: 150px;
+    position: fixed;
+    top: 100px;
+    left:0px;
+    overflow: hidden;
+    max-height: 0px; 
+    list-style-type: none;
+    padding-right: 0;
+    -webkit-transition: linear 1s;
+    transition: linear 1s;
+  }
+  .header__menu{margin:0;}
+  #nav.open {
+    position: fixed;
+    top: 100px;
+    left:0px;
+    /* margin-left: 620px; */
+    height: auto;
+    max-height: 500px; 
+    -webkit-transition: linear 1s;
+    transition: linear 1s;
+  
+  }
+  
+  #nav li {
+    float: none;
+    text-align: left;
+    text-decoration: none;
+    width: 100%; 
+    margin: 0;
+    -webkit-transition: linear 1s;
+    transition: linear 1s;
+  }
+  
+  #nav li a {
+  text-decoration: none;
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    margin: 0;
+    -webkit-transition: linear 1s;
+    transition: linear 1s;
+  }
+  #nav li .register__register {
+    background: fixed;
+    text-decoration: none;
+      color: black;
+      padding: 10px;
+      display: block;
+      margin: 0;
+      -webkit-transition: linear 1s;
+      transition: linear 1s;
+    }
+  #contain {
+      display: inline-block;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      top: 0px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #333;
+      margin: 6px 0;
+      transition: 0.2s;
+  }
+  
+  .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+      transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+      transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  
+  .hover .bar1 {
+    background-color: red;
+  }
+  
+  .hover .bar2 {
+    background-color: red;
+  }
+  
+  .hover .bar3 {
+    background-color: red;
+  }
+
+  .burger-icon {
+  position: relative;
+  right: 1%;
+  cursor: pointer;
+  top: 3px;
+}}
