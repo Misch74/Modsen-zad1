@@ -486,30 +486,7 @@
        visibility: visible;
        
      }
-  /* 
-  .register__link:after {
-    content: "";
-      display: block;
-      position: absolute;
-      right: 0;
-      bottom: -3px;
-      width: 0;
-      height: 2px; 
-      background-color: black; 
-      transition: width 0.5s; 
-  }
-  
-  .register__link:hover:after {
-    content: ".";
-      width: 100%;
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      height: 3px; 
-      background-color: blue; 
-      transition: width 0.5s; 
-  } */
+
   .register__link:hover {
     color: blue;
   }
