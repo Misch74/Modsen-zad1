@@ -514,6 +514,12 @@
   z-index: 10;
   padding-top: 50px;
 }
+.Hero1{
+  position: absolute;
+  right: 0;
+  z-index: 8;
+  padding-top: 80px;
+}
 .Alips{
   position: absolute;
   right:10%;
@@ -740,6 +746,7 @@ background-color: white;
   @media (max-width:830px) 
   {
     .Hero{display:block; width:100%; object-fit: cover; object-position: top;}
+    .Hero1{display:block; width:100%; object-fit: cover; object-position: top;}
     /* .Alips{display:block; width:80%; object-fit: cover; object-position: top;} */
     .Alips{display: none;}
     .Shtany{display:block; width:100%; padding-top:250px ; object-fit: cover; object-position: top;}
